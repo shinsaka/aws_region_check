@@ -1,0 +1,11 @@
+*.py[cod]
+__pycache__
+tags
+settings_local.py
+.env
+.env.*
+*.sqlite3
+*.swp
+.coverage
+cover/
+tmp/
