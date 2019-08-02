@@ -1,0 +1,4 @@
+PRICELIST_API_REGION=us-east-1
+UPLOAD_S3_BUCKET=your-s3-bucket-name
+UPLOAD_S3_PREFIX=regions-history/
+UPLOAD_S3_CURRENT=current-regionlist.txt
