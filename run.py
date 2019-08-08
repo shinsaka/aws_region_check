@@ -7,8 +7,6 @@ import datetime
 logging.config.dictConfig(settings.LOGGING_CONFIG)
 logger = logging.getLogger(__name__)
 
-UPLOAD_S3_CURRENT = 'current-regionlist.txt'
-
 
 def main():
     from lib import pricing

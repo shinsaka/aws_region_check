@@ -1,9 +1,14 @@
 import os
+import dotenv
+
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+dotenv.load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 PRICELIST_API_REGION = os.environ.get('PRICELIST_API_REGION', 'us-east-1')
 UPLOAD_S3_BUCKET = os.environ.get('UPLOAD_S3_BUCKET')
 UPLOAD_S3_PREFIX = os.environ.get('UPLOAD_S3_PREFIX')
-UPLOAD_S3_CURRENT = os.environ.get('UPLOAD_S3_CURRENT ')
+UPLOAD_S3_CURRENT = os.environ.get('UPLOAD_S3_CURRENT')
 
 LOG_LEVEL = os.environ.get('LOG_LEVEL', 'INFO')
 LOGGING_CONFIG = {
